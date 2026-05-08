@@ -83,6 +83,26 @@ namespace HotelYnCierto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap electronic_ticket__1_ {
+            get {
+                object obj = ResourceManager.GetObject("electronic-ticket (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap event__1_ {
+            get {
+                object obj = ResourceManager.GetObject("event (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_2026_04_19_232836649_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("image_2026-04-19_232836649-removebg-preview", resourceCulture);
@@ -126,6 +146,36 @@ namespace HotelYnCierto.Properties {
         internal static System.Drawing.Bitmap image_removebg_preview__32___1_ {
             get {
                 object obj = ResourceManager.GetObject("image-removebg-preview (32) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lost_and_found__1_ {
+            get {
+                object obj = ResourceManager.GetObject("lost-and-found (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap secure_payment {
+            get {
+                object obj = ResourceManager.GetObject("secure-payment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap secure_payment__1_ {
+            get {
+                object obj = ResourceManager.GetObject("secure-payment (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

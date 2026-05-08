@@ -10,27 +10,28 @@ namespace HotelYnCierto
             InitializeComponent();
             ActivateButton(btnDashboard);
 
+
             //dashboard
 
-            lblTitle.Text = "Dashboard";
+
             this.pnlFormLoader.Controls.Clear();
             HYDashboard dashboard = new HYDashboard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             dashboard.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(dashboard);
             dashboard.Show();
 
- 
+
         }
         Button currentBtn;
 
-        
+
 
         private void ActivateButton(Button btn)
         {
             if (currentBtn != null)
-                currentBtn.BackColor = Color.FromArgb(255, 255, 255, 255);
+                currentBtn.BackColor = Color.FromArgb(255, 255, 255);
 
-            btn.BackColor = Color.FromArgb(255, 255, 255, 255);
+            btn.BackColor = Color.FromArgb(255,255,255);
             currentBtn = btn;
 
             pnlNav.Top = btn.Top;
@@ -43,7 +44,7 @@ namespace HotelYnCierto
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             ActivateButton(btnDashboard);
-            lblTitle.Text = "Dashboard";
+
             this.pnlFormLoader.Controls.Clear();
             HYDashboard dashboard = new HYDashboard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             dashboard.FormBorderStyle = FormBorderStyle.None;
@@ -54,9 +55,9 @@ namespace HotelYnCierto
         private void btnCalendar_Click(object sender, EventArgs e)
         {
             ActivateButton(btnCalendar);
-            lblTitle.Text = "Calendar";
+
             this.pnlFormLoader.Controls.Clear();
-            HYCalendar calendar= new HYCalendar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            HYCalendar calendar = new HYCalendar() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             calendar.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(calendar);
             calendar.Show();
@@ -65,14 +66,27 @@ namespace HotelYnCierto
         private void btnReservation_Click(object sender, EventArgs e)
         {
             ActivateButton(btnReservation);
-            lblTitle.Text = "Reservation";
+
+            this.pnlFormLoader.Controls.Clear();
+            Reservation reservation = new Reservation() { Dock = DockStyle.Fill };
+            
+            this.pnlFormLoader.Controls.Add(reservation);
+            reservation.Show();
         }
 
-        private void btnCheckout_Click(object sender, EventArgs e)
+        private void btnPayments_Click(object sender, EventArgs e)
         {
-            ActivateButton(btnCheckout);
-            lblTitle.Text = "Checkout";
+            ActivateButton(btnPayments);
         }
 
+        private void btnLostnFound_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnLostnFound);
+        }
+
+        private void btnEvents_Click(object sender, EventArgs e)
+        {
+            ActivateButton(btnEvents);
+        }
     }
 }

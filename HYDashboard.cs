@@ -15,6 +15,7 @@ namespace HotelYnCierto
         {
             InitializeComponent();
             SetRoundedRegion(panel2, 20);
+            SetRoundedRegion(panel3, 20);
         }
 
         private void SetRoundedRegion(Control control, int radius)
@@ -31,5 +32,7 @@ namespace HotelYnCierto
 
             control.Region = new Region(path);
         }
+
+        
     }
 }

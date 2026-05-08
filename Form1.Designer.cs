@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
-            btnCheckout = new Button();
+            btnEvents = new Button();
+            btnLostnFound = new Button();
+            btnPayments = new Button();
             pnlNav = new Panel();
             btnReservation = new Button();
             btnCalendar = new Button();
@@ -39,21 +41,17 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
-            lblTitle = new Label();
-            txtBoxSearch = new TextBox();
-            panel3 = new Panel();
-            pictureBox2 = new PictureBox();
             pnlFormLoader = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(btnCheckout);
+            panel1.Controls.Add(btnEvents);
+            panel1.Controls.Add(btnLostnFound);
+            panel1.Controls.Add(btnPayments);
             panel1.Controls.Add(pnlNav);
             panel1.Controls.Add(btnReservation);
             panel1.Controls.Add(btnCalendar);
@@ -69,27 +67,63 @@
             panel1.Size = new Size(297, 1033);
             panel1.TabIndex = 0;
             // 
-            // btnCheckout
+            // btnEvents
             // 
-            btnCheckout.Dock = DockStyle.Top;
-            btnCheckout.FlatAppearance.BorderSize = 0;
-            btnCheckout.FlatStyle = FlatStyle.Flat;
-            btnCheckout.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            btnCheckout.Image = Properties.Resources.check_in__1_;
-            btnCheckout.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCheckout.Location = new Point(0, 465);
-            btnCheckout.Name = "btnCheckout";
-            btnCheckout.Padding = new Padding(50, 0, 0, 0);
-            btnCheckout.Size = new Size(297, 87);
-            btnCheckout.TabIndex = 12;
-            btnCheckout.Text = "Checkout";
-            btnCheckout.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCheckout.UseVisualStyleBackColor = true;
-            btnCheckout.Click += btnCheckout_Click;
+            btnEvents.Dock = DockStyle.Top;
+            btnEvents.FlatAppearance.BorderSize = 0;
+            btnEvents.FlatStyle = FlatStyle.Flat;
+            btnEvents.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnEvents.Image = Properties.Resources.event__1_;
+            btnEvents.ImageAlign = ContentAlignment.MiddleLeft;
+            btnEvents.Location = new Point(0, 639);
+            btnEvents.Name = "btnEvents";
+            btnEvents.Padding = new Padding(50, 0, 0, 0);
+            btnEvents.Size = new Size(297, 87);
+            btnEvents.TabIndex = 14;
+            btnEvents.Text = "Events";
+            btnEvents.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnEvents.UseVisualStyleBackColor = true;
+            btnEvents.Click += btnEvents_Click;
+            // 
+            // btnLostnFound
+            // 
+            btnLostnFound.Dock = DockStyle.Top;
+            btnLostnFound.FlatAppearance.BorderSize = 0;
+            btnLostnFound.FlatStyle = FlatStyle.Flat;
+            btnLostnFound.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnLostnFound.Image = Properties.Resources.lost_and_found__1_;
+            btnLostnFound.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLostnFound.Location = new Point(0, 552);
+            btnLostnFound.Name = "btnLostnFound";
+            btnLostnFound.Padding = new Padding(50, 0, 0, 0);
+            btnLostnFound.Size = new Size(297, 87);
+            btnLostnFound.TabIndex = 13;
+            btnLostnFound.Text = "Lost and Found";
+            btnLostnFound.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLostnFound.UseVisualStyleBackColor = true;
+            btnLostnFound.Click += btnLostnFound_Click;
+            // 
+            // btnPayments
+            // 
+            btnPayments.Dock = DockStyle.Top;
+            btnPayments.FlatAppearance.BorderSize = 0;
+            btnPayments.FlatStyle = FlatStyle.Flat;
+            btnPayments.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnPayments.Image = Properties.Resources.secure_payment__1_;
+            btnPayments.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPayments.Location = new Point(0, 465);
+            btnPayments.Name = "btnPayments";
+            btnPayments.Padding = new Padding(50, 0, 0, 0);
+            btnPayments.Size = new Size(297, 87);
+            btnPayments.TabIndex = 12;
+            btnPayments.Text = "Payments";
+            btnPayments.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnPayments.UseVisualStyleBackColor = true;
+            btnPayments.Click += btnPayments_Click;
             // 
             // pnlNav
             // 
-            pnlNav.BackColor = Color.PaleTurquoise;
+            pnlNav.BackColor = Color.FromArgb(183, 219, 175);
             pnlNav.Location = new Point(0, 288);
             pnlNav.Name = "pnlNav";
             pnlNav.Size = new Size(10, 125);
@@ -188,53 +222,13 @@
             panel2.Size = new Size(297, 204);
             panel2.TabIndex = 3;
             // 
-            // lblTitle
-            // 
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitle.ForeColor = SystemColors.AppWorkspace;
-            lblTitle.Location = new Point(87, 25);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(229, 54);
-            lblTitle.TabIndex = 1;
-            lblTitle.Text = "Dashboard";
-            // 
-            // txtBoxSearch
-            // 
-            txtBoxSearch.BorderStyle = BorderStyle.None;
-            txtBoxSearch.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBoxSearch.Location = new Point(1088, 38);
-            txtBoxSearch.Name = "txtBoxSearch";
-            txtBoxSearch.Size = new Size(431, 36);
-            txtBoxSearch.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.LemonChiffon;
-            panel3.Controls.Add(pictureBox2);
-            panel3.Controls.Add(lblTitle);
-            panel3.Controls.Add(txtBoxSearch);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(297, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1605, 116);
-            panel3.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.image_removebg_preview__32___1_;
-            pictureBox2.Location = new Point(1525, 38);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(37, 36);
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
-            // 
             // pnlFormLoader
             // 
+            pnlFormLoader.BackColor = Color.FromArgb(193, 225, 193);
             pnlFormLoader.Dock = DockStyle.Fill;
-            pnlFormLoader.Location = new Point(297, 116);
+            pnlFormLoader.Location = new Point(297, 0);
             pnlFormLoader.Name = "pnlFormLoader";
-            pnlFormLoader.Size = new Size(1605, 917);
+            pnlFormLoader.Size = new Size(1605, 1033);
             pnlFormLoader.TabIndex = 5;
             // 
             // Form1
@@ -244,7 +238,6 @@
             BackColor = Color.PaleTurquoise;
             ClientSize = new Size(1902, 1033);
             Controls.Add(pnlFormLoader);
-            Controls.Add(panel3);
             Controls.Add(panel1);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -253,9 +246,6 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -269,13 +259,11 @@
         private Button btnDashboard;
         private Panel pnlNav;
         private Button btnReservation;
-        private Button button2;
         private Button btnCalendar;
-        private Button btnCheckout;
-        private Label lblTitle;
-        private TextBox txtBoxSearch;
-        private Panel panel3;
-        private PictureBox pictureBox2;
+        private Button btnPayments;
         private Panel pnlFormLoader;
+        private Button button2;
+        private Button btnLostnFound;
+        private Button btnEvents;
     }
 }
